@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatChat", "src\ChatChat.csproj", "{908297B6-59EE-46D8-8DE8-AA8D128FBB50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{BED94A09-FD33-4649-9028-03EED0874932}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{EEFAEF29-B0B6-4DE3-8277-60CCF4AFE910}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{B61C7B68-C8B3-420B-91C3-32E628D3A86D}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\ChatChat.json = PublishScripts\Templates\ChatChat.json
+		PublishScripts\Templates\ChatChat.param.dev.json = PublishScripts\Templates\ChatChat.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{908297B6-59EE-46D8-8DE8-AA8D128FBB50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908297B6-59EE-46D8-8DE8-AA8D128FBB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908297B6-59EE-46D8-8DE8-AA8D128FBB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908297B6-59EE-46D8-8DE8-AA8D128FBB50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EEFAEF29-B0B6-4DE3-8277-60CCF4AFE910} = {BED94A09-FD33-4649-9028-03EED0874932}
+		{B61C7B68-C8B3-420B-91C3-32E628D3A86D} = {BED94A09-FD33-4649-9028-03EED0874932}
+	EndGlobalSection
+EndGlobal
