@@ -40,6 +40,14 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/signalr")
+    <script src="~/signalr/hubs"></script>
+    <script>
+        var ChatChat = {
+            hub: $.connection.chatHub,
+            $client: ChatChat.hub.client,
+            $server: ChatChat.hub.server
+        };
+    </script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

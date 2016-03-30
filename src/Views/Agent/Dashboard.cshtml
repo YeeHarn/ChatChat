@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<h2>Dashboard</h2>
+<label>Online User</label>
+<ul id="onlineUser"></ul>
+
+@section scripts {
+    @Scripts.Render("~/bundles/signalr")
+    <script src="~/signalr/hubs"></script>
+    <script>
+        $(function () {
+            var chat = $.connection.chatHub;
+            chat.server
+        });
+    </script>
+}
+

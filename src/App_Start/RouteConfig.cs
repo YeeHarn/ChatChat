@@ -14,9 +14,21 @@ namespace ChatChat
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Member Chat",
+                url: "chat/{id}",
+                defaults: new { controller = "Member", action = "Chat" }
+            );
+
+            routes.MapRoute(
+                name: "Agent Dashboard",
+                url: "agent/{action}",
+                defaults: new {controller = "Agent", action = "Login" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}/{action}",
+                defaults: new { controller = "Member", action = "Login", id = UrlParameter.Optional }
             );
         }
     }
